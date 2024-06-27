@@ -25,8 +25,8 @@ Este projeto implementa um sistema simples para gerenciar despesas, permitindo a
 
 1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/L06-web/despesas
+   cd despesas
 
 2. **Execute o Programa**
 ```sh
