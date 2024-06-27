@@ -13,7 +13,7 @@ def menu():
     return input("Escolha uma opção: ")
 
 despesas = []
-#1
+
 def inserir():
     def validadata(data_str):
         try:
@@ -59,7 +59,7 @@ def inserir():
     despesas.append(despesa)
     print("Despesa adicionada com sucesso!")
     input('Aperte qualquer tecla para continuar')
-#2
+
 def editar():
     def validadata(data_str):
         try:
@@ -111,7 +111,7 @@ def editar():
 
     print("Despesa editada com sucesso!")
     input('Aperte qualquer tecla para continuar')
-#3
+
 def buscar():
     criterio = input("Informe o critério de busca (data, categoria ou descrição): ").strip().lower()
 
@@ -133,7 +133,7 @@ def buscar():
     else:
         print("Nenhuma despesa encontrada com os critérios fornecidos.")
     input('Aperte qualquer tecla para continuar')
-#4
+
 def listar():
     if not despesas:
         print("Não há despesas cadastradas.")
@@ -147,7 +147,7 @@ def listar():
         print(f"Descrição: {despesa['descricao']}")
         print(f"Valor: R$ {despesa['valor']:.2f}\n")
     input('Aperte qualquer tecla para continuar')
-#5
+
 def remover():
     id_remover = input("Digite o ID da despesa que deseja remover: ")
 
@@ -159,7 +159,7 @@ def remover():
         else:
             print(f"Despesa com ID {id_remover} não encontrada.")
     input('Aperte qualquer tecla para continuar')
-#6
+
 def relatorio():
     if not despesas:
         print("Não há despesas cadastradas para gerar o relatório.")
